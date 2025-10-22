@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "quisualanim"
+name = "quisual"
 dynamic = ["version"]
 description = 'An easy visualiser for linear quantum circuits.'
 readme = "README.md"
@@ -27,12 +27,7 @@ classifiers = [
 dependencies = []
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/quisualanim"]
-
-[project.urls]
-Documentation = "https://github.com/Ash/quisualanim#readme"
-Issues = "https://github.com/Ash/quisualanim/issues"
-Source = "https://github.com/Ash/quisualanim"
+packages = ["src/quisual"]
 
 [tool.hatch.version]
 path = "src/quisualanim/__about__.py"
@@ -45,15 +40,15 @@ extra-dependencies = [
 check = "mypy --install-types --non-interactive {args:src/quisualanim tests}"
 
 [tool.coverage.run]
-source_pkgs = ["quisualanim", "tests"]
+source_pkgs = ["quisual", "tests"]
 branch = true
 parallel = true
 omit = [
-  "src/quisualanim/__about__.py",
+  "src/quisual/__about__.py",
 ]
 
 [tool.coverage.paths]
-quisualanim = ["src/quisualanim", "*/quisualanim/src/quisualanim"]
+quisual = ["src/quisual", "*/quisual/src/quisual"]
 tests = ["tests", "*/quisualanim/tests"]
 
 [tool.coverage.report]
