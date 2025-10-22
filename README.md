@@ -9,6 +9,7 @@
 
 - [Installation](#installation)
 - [License](#license)
+- [Documentation (WIP)](https://github.com/ashmuldoon/quisual/wiki)
 
 ## Installation
 
