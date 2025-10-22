@@ -1,4 +1,4 @@
-# src/quisualanim/pipeline_anim.py
+# src/quisual/pipeline_anim.py
 from __future__ import annotations
 
 import matplotlib.pyplot as plt
@@ -9,7 +9,13 @@ from matplotlib.patches import FancyBboxPatch
 
 from .core import Circuit, State, apply_gate
 
-
+''' 
+TODO: Stop the clipping problem with the final vector
+TODO: Improve stylisation
+TODO: Create looping animation
+TODO: Implement 2D
+TODO: Fix matrix stylisation (try to get latex to work, if not, make the custom implementation prettier)
+'''
 def animate_pipeline(
     state: State,
     circuit: Circuit,

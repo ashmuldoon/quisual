@@ -30,14 +30,14 @@ dependencies = []
 packages = ["src/quisual"]
 
 [tool.hatch.version]
-path = "src/quisualanim/__about__.py"
+path = "src/quisual/__about__.py"
 
 [tool.hatch.envs.types]
 extra-dependencies = [
   "mypy>=1.0.0",
 ]
 [tool.hatch.envs.types.scripts]
-check = "mypy --install-types --non-interactive {args:src/quisualanim tests}"
+check = "mypy --install-types --non-interactive {args:src/quisual tests}"
 
 [tool.coverage.run]
 source_pkgs = ["quisual", "tests"]
@@ -49,7 +49,7 @@ omit = [
 
 [tool.coverage.paths]
 quisual = ["src/quisual", "*/quisual/src/quisual"]
-tests = ["tests", "*/quisualanim/tests"]
+tests = ["tests", "*/quisual/tests"]
 
 [tool.coverage.report]
 exclude_lines = [
